@@ -6,7 +6,8 @@ const resource = [
         expiration: 10,
         rarity: "common",
         type: "vegetable",
-        color: ["yellow", "green"]
+        color: ["yellow", "green"],
+        region: 'Field',
     },
     {
         name: "Wheat",
@@ -15,7 +16,8 @@ const resource = [
         expiration: 12,
         rarity: "common",
         type: "grain",
-        color: ["gold", "brown"]
+        color: ["gold", "brown"],
+        region: 'Field',
     },
     {
         name: "Tomato",
@@ -24,7 +26,8 @@ const resource = [
         expiration: 7,
         rarity: "uncommon",
         type: "fruit",
-        color: ["red", "green"]
+        color: ["red", "green"],
+        region: 'Farm',
     },
     {
         name: "Potato",
@@ -33,7 +36,8 @@ const resource = [
         expiration: 15,
         rarity: "common",
         type: "rhizome",
-        color: ["brown", "tan"]
+        color: ["brown", "tan"],
+        region: 'Field',
     },
     {
         name: "Berry",
@@ -42,7 +46,8 @@ const resource = [
         expiration: 14,
         rarity: "common",
         type: "fruit",
-        color: ["purple", "red", "blue"]
+        color: ["purple", "red", "blue"],
+        region: 'Orchard',
     },
     {
         name: "Strawberry",
@@ -51,7 +56,8 @@ const resource = [
         expiration: 5,
         rarity: "rare",
         type: "fruit",
-        color: ["red", "green"]
+        color: ["red", "green"],
+        region: 'Farm',
     },
     {
         name: "Pumpkin",
@@ -60,7 +66,8 @@ const resource = [
         expiration: 20,
         rarity: "epic",
         type: "vegetable",
-        color: ["orange", "green"]
+        color: ["orange", "green"],
+        region: 'Farm',
     },
         {
         name: "Lettuce",
@@ -69,7 +76,8 @@ const resource = [
         expiration: 6,
         rarity: "uncommon",
         type: "vegetable",
-        color: ["green", "light green"]
+        color: ["green", "light green"],
+        region: 'Farm',
     },
     {
         name: "Eggplant",
@@ -78,7 +86,8 @@ const resource = [
         expiration: 18,
         rarity: "uncommon",
         type: "vegetable",
-        color: ["purple", "green"]
+        color: ["purple", "green"],
+        region: 'Farm',
     },
     {
         name: "Pepper",
@@ -87,7 +96,8 @@ const resource = [
         expiration: 9,
         rarity: "rare",
         type: "vegetable",
-        color: ["red", "green", "yellow", "orange"]
+        color: ["red", "green", "yellow", "orange"],
+        region: 'Farm',
     },
     {
         name: "Broccoli",
@@ -96,7 +106,8 @@ const resource = [
         expiration: 8,
         rarity: "uncommon",
         type: "vegetable",
-        color: ["green", "dark green"]
+        color: ["green", "dark green"],
+        region: 'Farm',
     },
     {
         name: "Cauliflower",
@@ -105,7 +116,8 @@ const resource = [
         expiration: 9,
         rarity: "rare",
         type: "vegetable",
-        color: ["white", "green"]
+        color: ["white", "green"],
+        region: 'Farm',
     },
     {
         name: "Coffee",
@@ -114,7 +126,8 @@ const resource = [
         expiration: 30,
         rarity: "epic",
         type: "fruit",
-        color: ["brown", "green", "red"]
+        color: ["brown", "green", "red"],
+        region: 'Farm',
     },
         {
         name: "Beans",
@@ -123,7 +136,8 @@ const resource = [
         expiration: 12,
         rarity: "common",
         type: "vegetable",
-        color: ["green", "brown", "purple"]
+        color: ["green", "brown", "purple"],
+        region: 'Orchard',
     },
     {
         name: "Garlic",
@@ -132,7 +146,8 @@ const resource = [
         expiration: 18,
         rarity: "uncommon",
         type: "rhizome",
-        color: ["white", "purple"]
+        color: ["white", "purple"],
+        region: 'Field',
     },
     {
         name: "Grain",
@@ -141,7 +156,8 @@ const resource = [
         expiration: 20,
         rarity: "common",
         type: "grain",
-        color: ["gold", "yellow"]
+        color: ["gold", "yellow"],
+        region: 'Field',
     },
     {
         name: "Grapes",
@@ -150,7 +166,8 @@ const resource = [
         expiration: 6,
         rarity: "rare",
         type: "fruit",
-        color: ["purple", "green", "red"]
+        color: ["purple", "green", "red"],
+        region: 'Orchard',
     },
     {
         name: "Persimmon",
@@ -159,7 +176,8 @@ const resource = [
         expiration: 10,
         rarity: "epic",
         type: "fruit",
-        color: ["orange", "green"]
+        color: ["orange", "green"],
+        region: 'Orchard',
     },
     {
         name: "Pomegranate",
@@ -168,7 +186,8 @@ const resource = [
         expiration: 12,
         rarity: "epic",
         type: "fruit",
-        color: ["red", "pink", "green"]
+        color: ["red", "pink", "green"],
+        region: 'Orchard',
     },
     {
         name: "Radish",
@@ -177,7 +196,8 @@ const resource = [
         expiration: 10,
         rarity: "uncommon",
         type: "rhizome",
-        color: ["red", "white", "green"]
+        color: ["red", "white", "green"],
+        region: 'Field',
     },
     {
         name: "Starfruit",
@@ -186,7 +206,8 @@ const resource = [
         expiration: 7,
         rarity: "legendary",
         type: "fruit",
-        color: ["yellow", "green"]
+        color: ["yellow", "green"],
+        region: 'Orchard',
     },
         {
         name: "Sweet Potato",
@@ -195,7 +216,8 @@ const resource = [
         expiration: 15,
         rarity: "uncommon",
         type: "rhizome",
-        color: ["purple", "orange"]
+        color: ["purple", "orange"],
+        region: 'Field',
     },
     {
         name: "Turnip",
@@ -204,7 +226,8 @@ const resource = [
         expiration: 13,
         rarity: "common",
         type: "rhizome",
-        color: ["white", "purple", "green"]
+        color: ["white", "purple", "green"],
+        region: 'Farm',
     },
     {
         name: "Camelia",
@@ -213,7 +236,8 @@ const resource = [
         expiration: 8,
         rarity: "rare",
         type: "flower",
-        color: ["pink", "red", "white"]
+        color: ["pink", "red", "white"],
+        region: 'Garden',
     },
     {
         name: "Hydrangea",
@@ -222,7 +246,8 @@ const resource = [
         expiration: 7,
         rarity: "uncommon",
         type: "flower",
-        color: ["blue", "purple", "pink"]
+        color: ["blue", "purple", "pink"],
+        region: 'Garden',
     },
     {
         name: "Lily",
@@ -231,7 +256,8 @@ const resource = [
         expiration: 6,
         rarity: "rare",
         type: "flower",
-        color: ["white", "yellow", "pink"]
+        color: ["white", "yellow", "pink"],
+        region: 'Garden',
     },
     {
         name: "Orchid",
@@ -240,7 +266,8 @@ const resource = [
         expiration: 9,
         rarity: "epic",
         type: "flower",
-        color: ["purple", "white", "pink"]
+        color: ["purple", "white", "pink"],
+        region: 'Garden',
     },
     {
         name: "Poppy",
@@ -249,7 +276,8 @@ const resource = [
         expiration: 5,
         rarity: "uncommon",
         type: "flower",
-        color: ["red", "orange", "pink"]
+        color: ["red", "orange", "pink"],
+        region: 'Garden',
     },
     {
         name: "Rose",
@@ -258,7 +286,8 @@ const resource = [
         expiration: 10,
         rarity: "epic",
         type: "flower",
-        color: ["red", "pink", "white", "yellow"]
+        color: ["red", "pink", "white", "yellow"],
+        region: 'Garden',
     }
 ]
 

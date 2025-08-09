@@ -25,7 +25,15 @@ const start = (place = null)=>{
     let value = 1 + (Math.random() * (10 * level.value));
     
     trade_1.value = Math.floor(Math.random() * resources.value.length);
-    trade_2.value = Math.floor(Math.random() * resources.value.length);
+
+    if(region.value != "Market"){
+        let available = resources.value.filter((r) => (r.region == region.value));
+        let temp = Math.floor(Math.random() * available.length);
+
+        trade_2.value = resources.value.indexOf(available[temp]);
+    }else{
+        trade_2.value = Math.floor(Math.random() * resources.value.length);
+    }
     
     value_1.value = 1 + Math.floor(value / resources.value[trade_1.value].value);
     value_2.value = 1 + Math.floor(value / resources.value[trade_2.value].value);

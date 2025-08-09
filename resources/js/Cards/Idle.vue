@@ -9,7 +9,7 @@ const region = defineModel("region");
 const travel = defineModel("travel");
 const emits = defineEmits(['100','All','play']);
 const activate = () => {
-    coins.value -= (1 + level.value);
+    coins.value -= (level.value);
     
     emits('play');
 }
@@ -30,7 +30,7 @@ defineExpose({start});
                  <span class="flex items-center mx-2 gap-1">
                     Lose
                     <img src="/Images/coins.png" class="w-[50px] h-[50px]" />
-                    {{ 1 + level }}
+                    {{ level }}
                 </span></p>
         </v-card-text>
     </v-card>

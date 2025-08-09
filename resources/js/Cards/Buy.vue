@@ -22,7 +22,15 @@ const activate = () => {
 }
 const start = (place = null)=>{
     value.value = 1 + Math.floor(Math.random() * (10 * level.value));
-    res.value = Math.floor(Math.random() * resources.value.length);
+
+    if(region.value != "Market"){
+        let available = resources.value.filter((r) => (r.region == region.value));
+        let temp = Math.floor(Math.random() * available.length);
+        res.value = resources.value.indexOf(available[temp]);
+    }else{
+        res.value = Math.floor(Math.random() * resources.value.length);
+    }
+
     cost.value = value.value * resources.value[res.value].value;
 }
 

@@ -46,5 +46,17 @@ export const places = {
         "Pumpkin Patch",
         "Sweetroot Village",
         "Radish Rise"
+    ],
+    "Field": [
+        "Golden Acres",
+        "Bramblefield",
+        "Sagebrush Flats",
+        "Sunset Meadow",
+        "Thistlefield",
+        "Wheatmere",
+        "Breezy Hollow",
+        "Cornflower Rise",
+        "Amberfield",
+        "Rustleaf Plains"
     ]
 };

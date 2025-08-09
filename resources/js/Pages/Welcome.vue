@@ -39,6 +39,11 @@ onMounted(()=>{
     region.value = rogue.value[0].region;   
     place.value = rogue.value[0].place;
     resource.value = SetValue(resource.value, rogue.value[0]);
+    console.log("vegetable",resource.value.filter(r=>r.type=="vegetable").length);
+    console.log("fruit",resource.value.filter(r=>r.type=="fruit").length);
+    console.log("rhizome",resource.value.filter(r=>r.type=="rhizome").length);
+    console.log("flower",resource.value.filter(r=>r.type=="flower").length);
+    console.log("grain",resource.value.filter(r=>r.type=="grain").length);
 });
 
 const end_turn = async ()=>{

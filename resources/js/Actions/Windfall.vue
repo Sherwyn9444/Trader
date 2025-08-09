@@ -18,7 +18,7 @@ const activate = () => {
     emits('play');
 }
 const start = (place = null)=>{
-    value.value = 1 + Math.floor(Math.random() * 6);
+    value.value = 1 + Math.floor(Math.random() * (6 * level.value));
     trade.value = Math.floor(Math.random() * resources.value.length);
 }
 

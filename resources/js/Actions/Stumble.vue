@@ -18,7 +18,7 @@ const activate = () => {
     emits('play');
 }
 const start = (place = null)=>{
-    value.value = 1 + Math.floor(Math.random() * 6);
+    value.value = 1 + Math.floor(Math.random() * (6 * level.value));
     let res = resources.value.filter((r) => r.quantity > 1);
     let find = Math.floor(Math.random() * res.length);
     if(res[find].quantity < value.value){

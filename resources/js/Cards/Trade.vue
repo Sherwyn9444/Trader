@@ -22,7 +22,7 @@ const activate = () => {
     emits('play');
 }
 const start = (place = null)=>{
-    let value = 1 + (Math.random() * 10);
+    let value = 1 + (Math.random() * (10 * level.value));
     
     trade_1.value = Math.floor(Math.random() * resources.value.length);
     trade_2.value = Math.floor(Math.random() * resources.value.length);

@@ -14,7 +14,7 @@ let max_crop = 99;
 
 const resource = ref(resources(max_crop));
 const coins = ref(0);
-const level = ref(0);
+const level = ref(1);
 const components = ref([]);
 const map = ref({...places});
 const region = ref("");

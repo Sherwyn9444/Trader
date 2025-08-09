@@ -17,7 +17,7 @@ const activate = () => {
     emits('play');
 }
 const start = (place = null)=>{
-    value.value = Math.floor(Math.random() * 20);
+    value.value = Math.floor(Math.random() * (20 * level.value));
 }
 
 defineExpose({start});

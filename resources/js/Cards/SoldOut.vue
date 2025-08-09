@@ -11,7 +11,7 @@ const travel = defineModel("travel");
 const value = ref(0);
 const cost = ref(0);
 const res = ref(0);
-const emits = defineEmits(['100','All','play']);
+const emits = defineEmits(['50','Market','play']);
 const activate = () => {
     if(resources.value[res.value].quantity >= value.value){
         resources.value[res.value].quantity -= value.value;
@@ -21,8 +21,9 @@ const activate = () => {
     emits('play');
 }
 const start = (place = null)=>{
-    value.value = 1 + Math.floor(Math.random() * 10);
+    
     res.value = Math.floor(Math.random() * resources.value.length);
+    value.value = resources.value[res.value].quantity;
     cost.value = value.value * resources.value[res.value].value;
 }
 
@@ -36,22 +37,26 @@ defineExpose({start});
         <v-card-title>{{ region }}</v-card-title>
         <v-card-subtitle>{{ place }}</v-card-subtitle>
         <v-card-text class="text-center items-center flex h-full flex-col gap-5">
-            <b class="text-2xl">Sell</b>
+            <b class="text-2xl">Sold Out</b>
             <p class="text-lg flex items-center flex-wrap justify-center">
-                Exchange
+                Sell All
                 
                 <span class="flex items-center mx-2 gap-1">
                     <img :src="resources[res].source" class="w-[50px] h-[50px]" />
                     {{ value }}
                 </span>
-
-                 to 
+                
+                
+            </p>
+            <p class="text-lg flex items-center flex-wrap justify-center">
+                 Worth 
 
                 <span class="flex items-center mx-2 gap-1">
                     <img src="/Images/coins.png" class="w-[50px] h-[50px]" />
                     {{ cost }}
                 </span>
             </p>
+            
         </v-card-text>
     </v-card>
 </template>

@@ -16,8 +16,10 @@ const trade_2 = ref(0);
 const new_place = ref(null);
 const distance = ref(0);
 
-const emits = defineEmits(['play']);
+const emits = defineEmits(['100','All','play']);
 const activate = () => {
+    region.value = "Travelling";
+    place.value = "";
     resources.value = SetValue(resources.value, new_place.value);
     travel.value = true;
     const extend = (turn)=>{

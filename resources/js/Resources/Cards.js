@@ -4,4 +4,6 @@ import Buy from "@/Cards/Buy.vue";
 import Sell from "@/Cards/Sell.vue";
 import ChangePlace from "@/Cards/ChangePlace.vue";
 import Idle from "@/Cards/Idle.vue";
-export default [StartGame, Idle, Trade, Buy, Sell, ChangePlace];
+import SoldOut from "@/Cards/SoldOut.vue";
+
+export default [StartGame, Idle, Trade, Buy, Sell, ChangePlace, SoldOut];

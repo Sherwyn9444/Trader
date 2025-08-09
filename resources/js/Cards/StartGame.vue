@@ -7,7 +7,7 @@ const level = defineModel("level");
 const place = defineModel("place");
 const region = defineModel("region");
 const travel = defineModel("travel");
-const emits = defineEmits(['play']);
+const emits = defineEmits(['100','All','play']);
 const activate = () => {
     coins.value += 100;
     for(let x = 0; x < 100; x++){

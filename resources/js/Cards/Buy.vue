@@ -11,7 +11,7 @@ const travel = defineModel("travel");
 const value = ref(0);
 const cost = ref(0);
 const res = ref(0);
-const emits = defineEmits(['100','play']);
+const emits = defineEmits(['100','All','play']);
 const activate = () => {
     if(coins.value >= cost.value){
         coins.value -= cost.value;

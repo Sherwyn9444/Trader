@@ -51,10 +51,17 @@ const end_turn = async ()=>{
 
     await nextTick()
 
-    choices.value[0] = Math.floor(Math.random() * cards.default.length);
-    choices.value[1] = Math.floor(Math.random() * cards.default.length);
-    choices.value[2] = Math.floor(Math.random() * cards.default.length);
-    choices.value[3] = Math.floor(Math.random() * cards.default.length);
+    let card_chances = [];
+    cards.default.forEach((a, ind)=>{
+        card_chances.push({chance: Number(a.emits[0]), region: a.emits[1], index: ind});
+    });
+    let available = card_chances.filter((cc) => (cc.region == region.value || cc.region == "All"));
+    console.log(available);
+
+    choices.value[0] = available[Math.floor(Math.random() * available.length)].index;
+    choices.value[1] = available[Math.floor(Math.random() * available.length)].index;
+    choices.value[2] = available[Math.floor(Math.random() * available.length)].index;
+    choices.value[3] = available[Math.floor(Math.random() * available.length)].index;
 
     let action_chances = [];
     actions.default.forEach((a, ind)=>{

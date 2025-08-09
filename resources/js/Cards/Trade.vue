@@ -13,7 +13,7 @@ const value_2 = ref(0);
 const trade_1 = ref(0);
 const trade_2 = ref(0);
 
-const emits = defineEmits(['play']);
+const emits = defineEmits(['100','All','play']);
 const activate = () => {
     if(resources.value[trade_1.value].quantity >= value_1.value){
         resources.value[trade_1.value].quantity -= value_1.value;

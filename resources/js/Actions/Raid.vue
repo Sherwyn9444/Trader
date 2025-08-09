@@ -11,7 +11,7 @@ const region = defineModel("region");
 const value = ref(0);
 const trade = ref(0);
 
-const emits = defineEmits(['5','play']);
+const emits = defineEmits(['5','All','play']);
 const activate = () => {
     coins.value -= value.value;
     emits('play');
@@ -24,7 +24,7 @@ defineExpose({start});
 </script>
 <template>
     <v-card @click="activate" class="max-h-[400px] max-w-[300px] mx-1" style="height: 50vh; width: 25vw; background-color: aliceblue;">
-        <v-card-title>Traveling</v-card-title>
+        <v-card-title>Roads</v-card-title>
         <v-card-subtitle>Action</v-card-subtitle>
         
         <v-card-text class="text-center items-center flex h-full flex-col gap-5">
